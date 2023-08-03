@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group 'com.xm'
+version '1.0.0.RELEASE'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE'
+
+    implementation 'org.springframework:spring-context:5.2.25.RELEASE'
+    implementation 'org.apache.commons:commons-csv:1.10.0'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.4.0'
+    testImplementation 'org.springframework:spring-test:5.2.25.RELEASE'
+}
+
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.xm.Application'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
