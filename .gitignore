@@ -1,42 +1,92 @@
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Gradle build directory
+/build/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# IntelliJ IDEA files
+.idea/
 *.iml
+*.iws
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
+# Eclipse files
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+.settings/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Compiled class files
+*.class
 
-### VS Code ###
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Gradle wrapper files
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Compiled binary files
+/bin/
+
+# Spring Boot target directory
+/target/
+
+# Maven build directory
+/target/
+
+# IDE-specific files
 .vscode/
+*.code-workspace
 
-### Mac OS ###
+# Spring Boot properties file (application.properties or application.yml)
+application.properties
+application.yml
+
+# Gradle specific files
+.gradle/
+gradlew
+gradlew.bat
+
+# Dependency lock files
+build.lock
+composer.lock
+
+# macOS specific files
 .DS_Store
+
+# Compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Tool Suite
+.springBeans
+.sts4-cache/
+
+# Log files
+*.log
+
+# Sensitive or local configuration files
+src/main/resources/application-local.properties
+src/main/resources/application-local.yml
+
+# IDE settings
+*.settings/
+*.project
+*.classpath
+*.factorypath
+
+# Thymeleaf cache
+src/main/resources/templates/cache/
+
+# Lombok config file
+lombok.config
+
+# Swagger UI configuration
+src/main/resources/static/swagger-ui/
+
+# Test coverage reports
+target/site/
+build/reports/
